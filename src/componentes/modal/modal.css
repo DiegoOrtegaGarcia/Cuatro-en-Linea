@@ -1,4 +1,5 @@
 .modal{
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,4 +42,48 @@
     border-radius: 20px;
     border: 1px solid white;
     box-shadow: 0px 8px 15px 5px white;
+}
+@media (max-width: 767px) {
+    .modal {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .modal-content {
+        width: 80%; /* Aumenta el ancho para mejor legibilidad en móviles */
+        height: 40%; /* Ajusta la altura para móviles */
+        top: 30%; /* Centra mejor el contenido */
+        left: 10%; /* Centra mejor el contenido */
+    }
+
+    .modal-h1 {
+        font-size: 24px; /* Aumenta el tamaño de la fuente para mejor legibilidad */
+    }
+
+    .modal-button {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para móviles */
+        padding: 8px; /* Aumenta el padding para mejor usabilidad */
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .modal {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .modal-content {
+        width: 50%; /* Ajusta el ancho para tablets */
+        height: 35%; /* Ajusta la altura para tablets */
+        top: 35%; /* Centra mejor el contenido */
+        left: 25%; /* Centra mejor el contenido */
+    }
+
+    .modal-h1 {
+        font-size: 28px; /* Aumenta el tamaño de la fuente para tablets */
+    }
+
+    .modal-button {
+        font-size: 16px; /* Mantén el tamaño de la fuente para tablets */
+        padding: 10px; /* Aumenta el padding para mejor usabilidad */
+    }
 }
