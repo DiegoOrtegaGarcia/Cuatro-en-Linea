@@ -1,0 +1,100 @@
+.tableroFichas{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(6,1fr);
+    background-color: #666;
+    min-width: 150px;
+    min-height: 200px;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    border-radius:  25px;
+    row-gap: 0px;
+    column-gap: 0px;
+}
+.tableroOcupar{
+    min-width: 150px;
+    min-height: 100px;
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 0px; /* Elimina el espacio entre los elementos */
+
+}
+.tablero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.reiniciador{
+    right: 0;
+    top: 0;
+    position: absolute;
+    color: white;
+    background-color: #111;
+    box-shadow: 0px 0px 10px blue;
+    border: 2px solid blue;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 20px;
+    transition: all 0.3s;
+    margin-right: 20px;
+}
+.reiniciador:hover{
+    background-color: white;
+    color: blue;
+    text-shadow: 0px 0px 10px blue;
+}
+
+@media (max-width: 767px) {
+    .tableroFichas {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        min-height: 300px; /* Reduce la altura mínima */
+        grid-template-columns: repeat(7, 1fr); /* Mantén 7 columnas */
+        grid-template-rows: repeat(6, 1fr); /* Mantén 6 filas */
+        padding: 5px; /* Reduce el padding */
+        margin: 10px; /* Añade un margen */
+    }
+
+    .tablero {
+        width: 90%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+        margin: 10px; /* Añade un margen */
+    }
+    @media (max-width: 767px) {
+        .tableroOcupar {
+            width: 100%; /* Reduce el ancho para dejar espacio a los márgenes */
+            min-height: 100px;
+            padding: 5px;
+            margin: 10px; /* Añade un margen */
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tableroFichas {
+        width: 90%;
+        min-height: 350px;
+        padding: 10px;
+    }
+
+    .tablero {
+        width: 70%;
+        height: auto;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .tableroOcupar {
+            width: 90%;
+            min-height: 120px;
+            padding: 10px;
+            margin: 15px; /* Añade un margen */
+        }
+    }
+}

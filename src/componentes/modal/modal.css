@@ -1,0 +1,44 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #555;
+    margin: auto;
+}
+.modal-h1{
+    color: white;
+    height: 100px;
+}
+.modal-button{
+    background-color: #555;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 20px;
+    color: aliceblue;
+
+}
+.modal-button:hover{
+    background: rgba(19, 19, 226, 0.534);
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px white;
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    width: 15%; /* Ocupa todo el ancho del modal */
+    height: 30%;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0px 8px 15px 5px white;
+}
